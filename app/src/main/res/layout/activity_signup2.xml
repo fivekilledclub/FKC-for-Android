@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingTop="46dp"
+    android:paddingLeft="46dp"
+    android:paddingRight="46dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="F K C"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Sign Up"
+        />
+
+    <ImageView
+        android:id="@+id/signup2_avatar"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:minHeight="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_fillet_blue">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Details"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- 全名Edit-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/signup2_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Full Name"
+                android:lines="1"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:id="@+id/myedit_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/name1"
+                android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                />
+        </FrameLayout>
+
+        <!-- 性别button-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        >
+            <!-- 男button-->
+            <Button
+                android:id="@+id/signup2_male"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/button_fillet_white"
+                android:textAllCaps="false"
+                />
+            <!-- 女button-->
+            <Button
+                android:id="@+id/signup2_female"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/button_fillet_blue"/>
+        </LinearLayout>
+
+        <!-- 生日Edit-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/signup2_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:maxLines="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Birthday"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:lines="1"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/calendar"
+                android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                />
+        </FrameLayout>
+
+        <!-- Back&Next Button-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        >
+            <!-- Back button -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+                <!-- 按钮-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/signup2_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_fillet_border_white"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="Back"/>
+                </LinearLayout>
+                <!-- 图片-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/left"
+                        android:layout_gravity="left"/>
+                </LinearLayout>
+            </FrameLayout>
+            <!-- Next button -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+                <!-- 按钮-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/signup2_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_fillet_yellow"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="Next"/>
+                </LinearLayout>
+                <!-- 图片-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/rightimage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/right"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

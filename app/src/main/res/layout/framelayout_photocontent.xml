@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    >
+
+        <ImageView
+            android:id="@+id/writedynamic_photocentent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img3"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/x"
+            android:padding="5dp"
+            android:background="#f00"
+            android:onClick="onDeletePhotoClick"
+            android:layout_gravity="right"
+            />
+</FrameLayout>

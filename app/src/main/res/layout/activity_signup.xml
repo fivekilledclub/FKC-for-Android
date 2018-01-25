@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/signup_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/signup_Down_Navigation1"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_fillet_white">
+        </View>
+        <View
+            android:id="@+id/signup_Down_Navigation2"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_fillet_blue">
+        </View>
+        <View
+            android:id="@+id/signup_Down_Navigation3"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_fillet_blue">
+        </View>
+    </LinearLayout>
+
+</LinearLayout>
